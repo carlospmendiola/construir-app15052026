@@ -1,0 +1,21 @@
+<%- include('templates/header.ejs') %>
+<main>
+  <h1><%= titulo %></h1>
+  <section>
+
+    <div class="flexContainer">
+      <% if (servicios && servicios.length>0) { %>
+        <% servicios.forEach(servicio => { %>
+          <article>
+            <h3><%= servicio.title %></h3>
+            <p><%= servicio.descripcion %></p>
+          </article>
+        <% }) %>
+        <% } else { %>
+        <p>Lo sentimos, no hay servicios</p>
+      <% } %>
+  
+    </div>
+  </section>
+</main>
+  <%- include('templates/footer.ejs') %>

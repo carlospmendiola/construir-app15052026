@@ -1,0 +1,258 @@
+/* ===========================================
+    Variables
+============================================== */
+:root {
+  --color-principal: #206649;
+  --color-secundario: #7c7b0b;
+  --color-bg-principal: #faf3f7;
+  --color-separacion: #cecece;
+  --color-texto: #131313;
+  --color-blanco: #ffffff;
+  --color-negro-90: #191919;
+  --color-negro-85: #262626;
+  --color-negro-70: #4c4c4c;
+  --color-negro-55: #737373;
+  --color-negro-40: #999;
+  --color-negro-25: #bfbfbf;
+  --color-negro-10: #e5e5e5;
+  --color-negro-5: #f2f2f2;
+  --font-principal: "Oswald", sans-serif;
+  --font-secundaria: "Georgia", serif;
+}
+
+/* ===========================================
+    Formato textos
+============================================== */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ===========================================
+    Formato textos
+============================================== */
+h1,
+h1,
+h3,
+h4 {
+  font-family: var(--font-secundaria);
+}
+
+p {
+  font-family: var(--font-principal);
+}
+
+.center {
+  text-align: center;
+}
+
+.fontPrincipal {
+  font-family: var(--font-principal);
+}
+
+.fontSecundaria {
+  font-family: var(--font-secundaria);
+}
+
+.fztitle {
+  font-size: 1.6rem;
+}
+
+.fzsubtitle {
+  font-size: 1.4rem;
+}
+
+.fztxt {
+  font-size: 1.1rem;
+}
+
+.fz09rem {
+  font-size: .9rem;
+}
+
+.lh-titles {
+  line-height: 1.1;
+}
+
+.lh-texto {
+  line-height: 1.4;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.txtMayusculas {
+  text-transform: uppercase;
+}
+
+.colorPrincipal {
+  color: var(--color-principal);
+}
+
+.fondoPrincipal {
+  background-color: var(--color-negro-5);
+}
+
+.fondoSecundario {
+  background-color: var(--color-negro-25);
+}
+
+.fondoBlanco {
+  background-color: var(--color-blanco);
+}
+
+.borderNormal {
+  border: 1px solid var(--color-separacion)
+}
+
+.borderTop1px {
+  border-top: 1px solid var(--color-separacion)
+}
+
+.borderBottom1px {
+  border-bottom: 1px solid var(--color-separacion)
+}
+
+.borderRadius10 {
+  border-radius: 10px;
+}
+
+.pad25px {
+  padding: 25px;
+}
+
+.pad50px {
+  padding: 50px;
+}
+
+.pad20px0 {
+  padding: 20px 0;
+}
+
+.pb20px {
+  padding-bottom: 20px;
+}
+
+.p10px {
+  padding: 10px;
+}
+
+.p5px {
+  padding: 5px;
+}
+
+.pb50px {
+  padding-bottom: 50px;
+}
+
+.mt40px {
+  margin-top: 40px;
+}
+
+.mb40px {
+  margin-bottom: 40px;
+}
+
+.mt20px {
+  margin-top: 20px;
+}
+
+.mb20px {
+  margin-bottom: 20px;
+}
+
+.g5px {
+  gap: 5px !important;
+}
+
+/* ===========================================
+    Arquitectura páginas
+============================================== */
+.container {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.flexContainerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template: repeat(1, 1fr)/repeat(1, 1fr);
+  gap: 25px;
+}
+
+/*===========================================
+      Responsive 768
+==============================================*/
+@media screen and (min-width:768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+/*cierra 768*/
+
+/* ===========================================
+    Responsive 990
+============================================== */
+@media screen and (min-width:990px) {
+  .container {
+    width: 80%;
+  }
+
+}
+
+/*cierra 990*/
+
+
+/* ===========================================
+    Responsive 1200
+============================================== */
+@media screen and (min-width:1200px) {
+  .container {
+    width: 70%;
+  }
+
+
+}
+
+/*cierra 1200*/

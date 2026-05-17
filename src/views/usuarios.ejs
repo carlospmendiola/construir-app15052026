@@ -1,0 +1,30 @@
+<%- include('templates/header.ejs') %>
+<main>
+  <h1>
+    <%= titulo %>
+  </h1>
+  <section>
+
+    <div class="flexContainer">
+      <% if (usuarios && usuarios.length>0) { %>
+        <% usuarios.forEach(name,username,email=> { %>
+          <article>
+            <h3>
+              <%= name %>
+            </h3>
+            <p>
+              <%= username %>
+            </p>
+            <p>
+              <%= email %>
+            </p>
+          </article>
+          <% }) %>
+            <% } else { %>
+              <p>Lo sentimos, no hay usuarios</p>
+      <% } %>
+
+    </div>
+  </section>
+</main>
+  <%- include('templates/footer.ejs') %>
